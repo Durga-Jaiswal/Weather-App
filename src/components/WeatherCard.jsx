@@ -51,11 +51,11 @@ function WeatherCard() {
 
   return (
     <>
-      <div className="w-screen h-screen flex flex-col justify-center items-center">
-        <h1 className="flex justify-center items-center text-slate-200 text-4xl mt-6">
+      <div className="w-full h-screen flex flex-col justify-center items-center">
+        <h1 className="flex justify-center items-center text-slate-200 text-4xl">
           <TiWeatherCloudy className="text-6xl"/> WeatherApp</h1>
-        <div className="bg-slate-200 h-4/5 w-1/4 m-auto flex flex-col justify-evenly border rounded-xl box-shadow">
-          <div className="flex justify-center border-2 border-slate-900 rounded-lg m-4 box-shadow-input">
+        <div className="bg-slate-200 h-4/5 w-1/4 mx-auto flex flex-col justify-evenly border rounded-xl box-shadow p-4">
+          <div className="flex justify-center border-2 border-slate-900 rounded-lg m-2 box-shadow-input">
             <input
               type="text"
               value={city}
@@ -105,11 +105,11 @@ function WeatherCard() {
           <div className="w-auto mx-auto border rounded-xl border-slate-900">
             
                 <div className="text-lg text-slate-900 p-2 flex justify-around items-center my-1 border-b-2 border-slate-900">
-                  <FaWind className="size-8 mr-2" />
+                <MdOutlineWaterDrop className="size-8 mr-2" />
                   Humidity: {data.current.humidity}
                 </div>
                 <div className="text-lg text-slate-900 p-2 flex justify-around items-center my-1 border rounded-lg">
-                  <MdOutlineWaterDrop className="size-8 mr-2" />
+                  <FaWind className="size-8 mr-2" />
                   Wind-Speed: {data.current.wind_kph}
                 </div>
           </div>
