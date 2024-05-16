@@ -104,12 +104,12 @@ function WeatherCard() {
           
           <div className="w-auto mx-auto border rounded-xl border-slate-900">
             
-                <div className="text-lg text-slate-900 p-2 flex justify-around items-center my-1 border-b-2 border-slate-900">
-                <MdOutlineWaterDrop className="size-8 mr-2" />
+                <div className="text-lg text-slate-900 p-2 flex justify-center items-center my-1 border-b-2 border-slate-900">
+                <MdOutlineWaterDrop className="size-8 mr-1" />
                   Humidity: {data.current.humidity}%
                 </div>
                 <div className="text-lg text-slate-900 p-2 flex justify-around items-center my-1 border rounded-lg">
-                  <FaWind className="size-8 mr-2" />
+                  <FaWind className="size-8 mr-1" />
                   Wind-Speed: {data.current.wind_kph}km/h
                 </div>
           </div>
