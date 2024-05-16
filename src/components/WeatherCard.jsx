@@ -3,8 +3,8 @@ import { FaWind } from "react-icons/fa";
 import { MdOutlineWaterDrop } from "react-icons/md";
 import { TiWeatherCloudy } from "react-icons/ti";
 
-
 import { useEffect, useState } from "react";
+
 function WeatherCard() {
   const [data, setData] = useState(null);
   const [city, setCity] = useState("Pune");
@@ -19,7 +19,7 @@ function WeatherCard() {
     setError(null); // Reset error state on each fetch
 
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=a46aebdcff964bc398584914241505&q=${city}&aqi=no`
+     `http://api.weatherapi.com/v1/current.json?key=a46aebdcff964bc398584914241505&q=${city}&aqi=no`
     )
       .then((res) => {
         if (!res.ok) { // Handle HTTP errors
@@ -28,7 +28,6 @@ function WeatherCard() {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         setIsLoading(false);
         setData(data);
       })
