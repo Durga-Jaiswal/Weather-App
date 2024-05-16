@@ -19,7 +19,8 @@ function WeatherCard() {
     setError(null); // Reset error state on each fetch
 
     fetch(
-     `http://api.weatherapi.com/v1/current.json?key=a46aebdcff964bc398584914241505&q=${city}&aqi=no`
+     `https://api.weatherapi.com/v1/current.json?key=a46aebdcff964bc398584914241505&q=${city}&aqi=no`
+
     )
       .then((res) => {
         if (!res.ok) { // Handle HTTP errors
